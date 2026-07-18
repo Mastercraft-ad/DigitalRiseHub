@@ -6,12 +6,20 @@ import Hero from "./component/Hero/Hero";
 function App() {
   return (
     <>
+    {/* Moses Task */}
       <Header />
       <Hero />
-      {/* <Services />
-      <WhyChooseUs />
-      <CTA />
-      <Footer /> */}
+
+    {/* Paul Task */}
+      {/* <Services /> */}
+
+      {/* Pascal Task */}
+      {/* <WhyChooseUs /> */}
+
+      {/* Dennis Task */}
+      {/* <CTA />
+      <Footer />  */}
+
     </>
   );
 }
