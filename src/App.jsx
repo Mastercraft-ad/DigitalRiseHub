@@ -1,7 +1,7 @@
 import "./App.css";
-import Header from "./component/Header/Header";
-import Hero from "./component/Hero/Hero";
-import Cta from "./component/Cta/Cta";
+import Header from "/src/component/Header/Header";
+import Hero from "/src/component/Hero/Hero";
+import Cta from "/src/component/Cta/Cta";
 
 
 function App() {
