@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./component/Header/Header";
 import Hero from "./component/Hero/Hero";
+import Cta from "./component/Cta/Cta";
 
 
 function App() {
@@ -17,8 +18,9 @@ function App() {
       {/* <WhyChooseUs /> */}
 
       {/* Dennis Task */}
-      {/* <CTA />
-      <Footer />  */}
+      
+      <Cta />
+      {/* <Footer /> */}
 
     </>
   );
