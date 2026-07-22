@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "/src/component/Header/Header";
 import Hero from "/src/component/Hero/Hero";
 import Cta from "/src/component/Cta/Cta";
-
+import WhyChooseUs from "/src/component/WhyChooseUs/WhyChooseUs";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       {/* <Services /> */}
 
       {/* Pascal Task */}
-      {/* <WhyChooseUs /> */}
+      {<WhyChooseUs />}
 
       {/* Dennis Task */}
       

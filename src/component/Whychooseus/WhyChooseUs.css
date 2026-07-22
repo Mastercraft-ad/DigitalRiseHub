@@ -1,0 +1,157 @@
+/* ============================================
+   DESIGN TOKENS
+   Keep every color/spacing decision here.
+   Change these 6 lines to reskin the whole section.
+   ============================================ */
+.wcu {
+  --bg-panel: #f5f7fa;
+  --accent-teal: #1d9ba6;
+  --accent-teal-hover: #17838d;
+  --text-heading: #141b2d;
+  --text-body: #5b6472;
+  --white: #ffffff;
+
+  --gap-lg: 48px;
+  --radius: 6px;
+}
+
+/* ============================================
+   LAYOUT — two-column grid, image left / content right
+   ============================================ */
+.wcu {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  align-items: stretch;
+  min-height: 640px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.wcu__image-col {
+  overflow: hidden;
+}
+
+.wcu__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;  /* shifts the visible crop upward to show faces */
+  display: block;
+}
+
+.wcu__content-col {
+  background: var(--bg-panel);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 64px 72px;
+}
+
+.wcu__content-inner {
+  max-width: 560px;
+  text-align: left;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+.wcu__heading {
+  font-size: 40px;
+  line-height: 1.15;
+  font-weight: 800;
+  color: var(--text-heading);
+  margin: 0 0 24px;
+  letter-spacing: -0.5px;
+}
+
+.wcu__intro {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--text-body);
+  margin: 0 0 36px;
+}
+
+/* ============================================
+   FEATURE LIST
+   ============================================ */
+.wcu__features {
+  list-style: none;
+  margin: 0 0 40px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.wcu__feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.wcu__dot {
+  flex: 0 0 auto;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--accent-teal);
+  margin-top: 6px;
+}
+
+.wcu__feature-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-heading);
+  margin: 0 0 4px;
+}
+
+.wcu__feature-desc {
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--text-body);
+  margin: 0;
+}
+
+/* ============================================
+   CTA BUTTON
+   ============================================ */
+.wcu__cta {
+  background: var(--accent-teal);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius);
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.wcu__cta:hover {
+  background: var(--accent-teal-hover);
+}
+
+.wcu__cta:focus-visible {
+  outline: 3px solid var(--accent-teal);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   RESPONSIVE — stack on smaller screens
+   ============================================ */
+@media (max-width: 900px) {
+  .wcu {
+    grid-template-columns: 1fr;
+  }
+
+  .wcu__image-col {
+    min-height: 320px;
+  }
+
+  .wcu__content-col {
+    padding: 48px 28px;
+  }
+
+  .wcu__heading {
+    font-size: 30px;
+  }
+}
