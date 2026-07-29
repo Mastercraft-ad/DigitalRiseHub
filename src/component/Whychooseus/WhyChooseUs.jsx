@@ -21,10 +21,10 @@ const FEATURES = [
   },
 ];
 
-export default function WhyChooseUs({
+function WhyChooseUs({
   imageSrc = teamPhoto,
   imageAlt = "Team collaborating around a table",
-}) {
+}){
   return (
     <section className="wcu">
       {/* Left column: image */}
@@ -63,3 +63,5 @@ export default function WhyChooseUs({
     </section>
   );
 }
+
+export default WhyChooseUs;

@@ -1,9 +1,9 @@
 import "./App.css";
-import Header from "/src/component/Header/Header";
-import Hero from "/src/component/Hero/Hero";
-import Services from "/src/component/Services/Services";
-import Cta from "/src/component/Cta/Cta";
-import WhyChooseUs from "/src/component/WhyChooseUs/WhyChooseUs";
+import Header from "./component/Header/Header";
+import Hero from "./component/Hero/Hero";
+import Services from "./component/Services/Services";
+import Cta from "./component/Cta/Cta";
+import WhyChooseUs from "./component/WhyChooseUs/WhyChooseUs";
 
 function App() {
   return (
