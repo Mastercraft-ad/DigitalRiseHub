@@ -8,11 +8,11 @@
   background: #182443;
   color: #fff;
   text-align: center;
-  padding: 80px 20px;
+  padding: clamp(3.5rem, 7vw, 5rem) 1.25rem;
 }
 
 .cta h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -20,7 +20,7 @@
 .cta p {
   max-width: 700px;
   margin: auto;
-  font-size: 1.3rem;
+  font-size: clamp(1rem, 1.8vw, 1.3rem);
   line-height: 1.8;
 }
 
@@ -68,7 +68,7 @@
   background: #f5f5f5;
   padding: 70px 8%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 50px;
 }
 
@@ -127,20 +127,13 @@
 
 /* Responsive */
 
-
 @media (max-width: 1200px) {
   .footer {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
 
-  .cta h1 {
-    font-size: 2rem;
-  }
-
-  .cta p {
-    font-size: 1rem;
-  }
-
+@media (max-width: 768px) {
   .cta-buttons {
     flex-direction: column;
     align-items: center;
@@ -148,18 +141,22 @@
 
   .btn-primary,
   .btn-secondary {
-    width: 250px;
+    width: min(100%, 280px);
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 32px;
   }
 }
 
 .footer-bottom {
-  width: 100%; /* Makes it span across all columns */
+  width: 100%;
   margin-top: 40px;
   text-align: center;
 }
 
 .footer-bottom hr {
-  border: none;
   border: none;
   border-top: 1px solid #d6d6d6;
   margin-bottom: 20px;
