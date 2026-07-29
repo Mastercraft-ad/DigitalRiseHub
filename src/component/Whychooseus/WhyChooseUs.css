@@ -20,7 +20,7 @@
    ============================================ */
 .wcu {
   display: grid;
-  grid-template-columns: 1.05fr 1fr;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
   align-items: stretch;
   min-height: 640px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -34,7 +34,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;  /* shifts the visible crop upward to show faces */
+  object-position: center 30%;
   display: block;
 }
 
@@ -43,19 +43,20 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 64px 72px;
+  padding: clamp(2rem, 5vw, 4rem) clamp(1.25rem, 3vw, 4.5rem);
 }
 
 .wcu__content-inner {
   max-width: 560px;
   text-align: left;
+  width: 100%;
 }
 
 /* ============================================
    TYPOGRAPHY
    ============================================ */
 .wcu__heading {
-  font-size: 40px;
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
   line-height: 1.15;
   font-weight: 800;
   color: var(--text-heading);
@@ -64,7 +65,7 @@
 }
 
 .wcu__intro {
-  font-size: 18px;
+  font-size: clamp(1rem, 1.6vw, 1.125rem);
   line-height: 1.6;
   color: var(--text-body);
   margin: 0 0 36px;
@@ -148,10 +149,20 @@
   }
 
   .wcu__content-col {
-    padding: 48px 28px;
+    padding: 2.25rem 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .wcu__features {
+    gap: 18px;
   }
 
-  .wcu__heading {
-    font-size: 30px;
+  .wcu__feature {
+    gap: 12px;
+  }
+
+  .wcu__cta {
+    width: 100%;
   }
 }

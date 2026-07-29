@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "/src/component/Header/Header";
 import Hero from "/src/component/Hero/Hero";
+import Services from "/src/component/Services/Services";
 import Cta from "/src/component/Cta/Cta";
 import WhyChooseUs from "/src/component/WhyChooseUs/WhyChooseUs";
 
@@ -12,15 +13,14 @@ function App() {
       <Hero />
 
     {/* Paul Task */}
-      {/* <Services /> */}
+      <Services />
 
       {/* Pascal Task */}
       {<WhyChooseUs />}
 
       {/* Dennis Task */}
-      
+    
       <Cta />
-      {/* <Footer /> */}
 
     </>
   );
