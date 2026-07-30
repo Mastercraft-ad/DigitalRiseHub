@@ -1,5 +1,5 @@
 import "../Header/Header.css";
-import headerLogo  from "/src/assets/Dlogo.png";
+import headerLogo  from "../../assets/Dlogo.png";
 
 function Header() {
   return (

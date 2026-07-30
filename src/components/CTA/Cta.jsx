@@ -1,5 +1,5 @@
 import "./Cta.css";
-import headerLogo  from "/src/assets/Dlogo.png";
+import headerLogo  from "../../assets/Dlogo.png";
 import {
   FaEnvelope,
   FaPhoneAlt,
