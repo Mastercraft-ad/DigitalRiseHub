@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Services from "./components/Services/Services";
 import Cta from "./components/CTA/Cta";
-import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
+import WhyChooseUs from "./components/Whychooseus/WhyChooseUs";
 
 function App() {
   return (
